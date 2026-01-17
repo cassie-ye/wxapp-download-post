@@ -1,0 +1,16 @@
+<!-- components/poster/poster.wxml -->
+<view class="poster">
+    <canvas class="poster__canvas" canvas-id="canvasPoster" style="width:{{photoWidth}}px;height:{{photoHeight}}px;zoom:{{canvasZoom}}%"></canvas>
+    <view class="poster__image-container">
+        <image class="poster__image-container-image" src="{{backgroundImage}}"></image>
+        <view class="poster__white-area">
+            <view class="poster__white-area-left">
+                <view class="poster__text poster__text--primary">{{primaryText}}</view>
+                <view class="poster__text poster__text--secondary">{{secondaryText}}</view>
+            </view>
+            <view class="poster__white-area-right">
+                <image class="poster__qr-image" src="{{qrImage}}" />
+            </view>
+        </view>
+    </view>
+</view>

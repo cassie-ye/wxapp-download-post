@@ -1,0 +1,77 @@
+/* components/poster/poster.wxss - BEM风格 */
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+  position: relative;
+}
+
+/* Element: Canvas海报 */
+.poster__canvas {
+  position: absolute;
+  left: 99999rpx;
+  top: 0rpx;
+}
+
+/* Element: 图片容器 */
+.poster__image-container {
+  width: 600rpx;
+  height: 1025rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.1);
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+/* Element: 主图片 */
+.poster__image-container-image {
+  width: 100%;
+  height: 820rpx;
+}
+
+/* Element: 白色区域 */
+.poster__white-area {
+  width: 600rpx;
+  height: 205rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Element: 左侧文字区域 */
+.poster__white-area-left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Element: 右侧二维码区域 */
+.poster__white-area-right {
+  display: flex;
+  align-items: center;
+  margin-right: 30rpx;
+}
+
+/* Element: 文字 */
+.poster__text {
+  padding-left: 30rpx;
+}
+
+.poster__text--primary {
+  font-size: 28rpx;
+  color: #000000;
+}
+
+.poster__text--secondary {
+  font-size: 24rpx;
+  color: #9c9c9c;
+}
+
+/* Element: 二维码图片 */
+.poster__qr-image {
+  width: 120rpx;
+  height: 120rpx;
+}
