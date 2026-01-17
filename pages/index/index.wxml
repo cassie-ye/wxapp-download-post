@@ -1,0 +1,42 @@
+<view class="container">
+  <!-- <i-grid>
+    <i-spin fix wx:if="{{spinShow}}"></i-spin>
+  </i-grid> -->
+  <view class="up">
+    <view wx:if="{{spinShow}}" class="loading">加载中...</view>
+    <view wx:elif="{{background.length === 0}}" class="empty-tip">暂无图片数据</view>
+    <swiper
+      wx:else
+      class="swiper"
+      indicator-dots="{{indicatorDots}}"
+      indicator-color="{{indicatorColor}}"
+      indicator-active-color="{{indicatorActiveColor}}"
+      autoplay="{{autoplay}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      bindchange="currentChange"
+    >
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view class="text">
+            <text class="txt">{{resultValArr[1] || '测试结果'}}</text>
+            <text class="txt">"愿你被世界温柔以待"</text>
+          </view>
+          <image class="swiper-item" mode="widthFix" src="{{item.tempFileURL}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="down">
+    <view class="btn-box">
+      <button class="btn" bindtap="cancel">返回</button>
+      <button class="btn btn-success" bindtap="confirm" loading="{{btnLoading}}">保存到相册</button>
+    </view>
+    <button wx:if="{{imgAuthBtn}}" open-type="openSetting" bindopensetting="checkImgAuthFun" class="authBtn">请授权相册</button>
+  </view>
+</view>
+<canvas
+  class="canvas-poster"
+  canvas-id="canvasPoster"
+  style="width:{{width}}px;height:{{height}}px"
+></canvas>

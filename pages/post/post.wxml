@@ -1,0 +1,21 @@
+<!-- pages/post.wxml -->
+<view class="post">
+    <canvas class="post__canvas" canvas-id="canvasPoster" style="width:{{photoWidth}}px;height:{{photoHeight}}px;zoom:40%"></canvas>
+    <view class="post__image-container">
+        <image class="post__image-container-image" src="../../static/1.png"></image>
+        <view class="post__white-area">
+            <view class="post__white-area-left">
+                <view class="post__text post__text--primary">邀请您一起加入POPO</view>
+                <view class="post__text post__text--secondary">长按二维码识别</view>
+            </view>
+            <view class="post__white-area-right">
+                <image class="post__qr-image" src="../../static/qr.png" />
+            </view>
+        </view>
+    </view>
+    <view class="post__bottom">
+        <view class="post__bottom-btn">
+            <button class="post__bottom-btn__btn" bindtap="saveImage">保存图片</button>
+        </view>
+    </view>
+</view>
