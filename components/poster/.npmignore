@@ -1,0 +1,14 @@
+# 开发文件
+*.log
+.DS_Store
+node_modules/
+.vscode/
+.idea/
+
+# 测试文件
+test/
+*.test.js
+
+# 其他
+.git/
+.gitignore

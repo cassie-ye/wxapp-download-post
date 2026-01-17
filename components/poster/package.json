@@ -1,0 +1,37 @@
+{
+  "name": "wxapp-poster",
+  "version": "1.0.0",
+  "description": "一个高度可配置的微信小程序海报生成组件，支持自定义图片、文字、颜色、字体、间距等所有样式",
+  "main": "poster.js",
+  "miniprogram": ".",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wechat",
+    "miniprogram",
+    "weixin",
+    "poster",
+    "canvas",
+    "海报",
+    "小程序",
+    "微信小程序"
+  ],
+  "author": "joie_pink <cassieye20190909@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cassie-ye/wxapp-download-post.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cassie-ye/wxapp-download-post/issues"
+  },
+  "homepage": "https://github.com/cassie-ye/wxapp-download-post#readme",
+  "files": [
+    "poster.js",
+    "poster.wxml",
+    "poster.wxss",
+    "poster.json",
+    "README.md"
+  ]
+}
