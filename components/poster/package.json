@@ -1,7 +1,7 @@
 {
   "name": "wxapp-poster",
   "version": "1.0.0",
-  "description": "一个高度可配置的微信小程序海报生成组件，支持自定义图片、文字、颜色、字体、间距等所有样式",
+  "description": "微信小程序海报生成组件，基于Canvas 2倍图实现，支持海报预览、支持保存到相册、支持自定义配置，零依赖，开箱即用",
   "main": "poster.js",
   "miniprogram": ".",
   "scripts": {
